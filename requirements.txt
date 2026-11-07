@@ -1,4 +1,7 @@
-pandas
+python-dotenv
 numpy
 scikit-learn
 pymongo
+certifi
+
+## -e .
