@@ -22,15 +22,18 @@ def get_requirements() -> List[str]:
             lines = file.readlines()
             ## process each line
             for line in lines:
+                # Ignoring blank spaces and newline characters.
                 requirement = line.strip()
                 # Ignore empty lines and -e .
                 if requirement and requirement != '-e .':
                     requirements_lst.append(requirement)
 
     except FileNotFoundError:
-        print(f"Error: The file {'requirements.txt'} was not found.")
+        print("Error: The file requirements.txt was not found.")
 
     return requirements_lst
+
+print("Requirements List:", get_requirements())
 
 setup(
     name='Network Security',
