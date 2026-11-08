@@ -3,5 +3,7 @@ numpy
 scikit-learn
 pymongo
 certifi
+mongodb@3.6
+
 
 -e .
