@@ -1,0 +1,7 @@
+[2026-11-13 18:36:44,633] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-11-13 18:36:44,644] 107 dagshub - INFO - Accessing as MdSaif523
+[2026-11-13 18:36:46,022] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/MdSaif523/networksecurity- "HTTP/1.1 200 OK"
+[2026-11-13 18:36:49,696] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-11-13 18:36:49,698] 107 dagshub - INFO - Initialized MLflow to track repo "MdSaif523/networksecurity-"
+[2026-11-13 18:36:49,699] 107 dagshub - INFO - Repository MdSaif523/networksecurity- initialized!
+[2026-11-13 18:36:49,699] 21 root - INFO - Initiate the data ingestion.
