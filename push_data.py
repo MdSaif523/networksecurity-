@@ -11,7 +11,7 @@ print(MONGO_DB_URL)
 import certifi
 import pymongo
 
-ca=certifi.where()
+ca=certifi.where() # 'ca'--> Certificate Authority.
 
 import pandas as pd
 import numpy as np
@@ -20,13 +20,13 @@ from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
 
 class NetworkDataExtract():
-
     def __init__(self):
         try:
             pass
         except Exception as e:
             raise NetworkSecurityException(e, sys)
 
+    ## TRANSFORMATION PHASE
     def cv_to_json_convertor(self,file_path:str)->json:
         """
         This function will convert the csv file to json format.
@@ -42,6 +42,7 @@ class NetworkDataExtract():
         except Exception as e:
             raise NetworkSecurityException(e, sys)
 
+    ## LOADING PHASE
     def insert_data_to_mongodb(self,records,database,collection):
         """
         This function will insert the data into mongodb collection.
@@ -71,3 +72,4 @@ if __name__=='__main__':
     print("Records to be inserted:",records)
     no_of_records=networkobj.insert_data_to_mongodb(records=records,database=DATABASE,collection=collection)
     print(f"Number of records inserted: {no_of_records}")
+
